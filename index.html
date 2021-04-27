@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<script src="script.js"></script>
+  <form class="form-wrapper" action="action_page.php" method="post">
+    <div class="text-container">
+      <h1 class="logo"><span class="color">agenda</span>.dentária</h1>
+    </div>
+
+    <div class="container">
+      <label class="label" for="uname">Username</label>
+      <input class="input-box" type="text" placeholder="Digite um usuário" name="uname" required>
+
+      <label class="label" for="psw">Password</label>
+      <input class="input-box" type="password" placeholder="Digite a senha" name="psw" required>
+
+      <button class="button" type="submit">Entrar</button>
+      <div class="container-two">
+        <label>
+          <input type="checkbox" checked="checked" name="remember"><span class="tiny-letters">Lembrar de mim</span>
+        </label>
+        <a class="tiny-letters" href="">Esqueci minha senha</a>
+      </div>
+    </div>
+
+    <div class="text-container"><a class="tiny-letters" href="">Registrar</a></div>
+
+  </form>
+
 </body>
+
 </html>
