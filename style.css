@@ -11,6 +11,10 @@ body {
  background: #55C4D3;
 }
 
+.no-outline:focus {
+  outline: none;
+}
+
 /* Form Wrapper */
 
 .form-wrapper {
@@ -54,6 +58,17 @@ body {
   margin: 8px 0;
   box-sizing: border-box;
   background: #EFEFEF;
+ 
+}
+
+.input-box:focus {
+  outline: none;
+}
+
+.checkbox-input {
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
 }
 
 /* Button */
@@ -93,6 +108,13 @@ body {
 }
 
 .container {
-  padding: 10%;
+  padding: 5%;
 }
-  
+
+/* Register */
+
+.register {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
