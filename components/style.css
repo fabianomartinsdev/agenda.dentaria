@@ -159,7 +159,7 @@ a {
 
 .schedule-pacient:hover {
   opacity: 0.95;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
 }
 
 /* Centered text */
@@ -185,8 +185,36 @@ table {
   border-collapse: collapse;
 }
 
+tr {
+  font-style: normal;
+}
+
 td, th {
   padding: 5px 20px;
   border-spacing: 0px;
   border: 1px solid #fff;
+}
+
+/* -----------------------------------------------PACIENT PAGE--------------------------------------------------- */
+
+.information-button {
+  display: inline-block;
+  margin: 20px;
+  width: 20px;
+  height: 20px;
+  background: #55C4D3;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.information-button:hover {
+  opacity: 0.90;
+  
+}
+
+.secondary-teeth {
+  margin: 15px;
+  height: 450px;
 }
