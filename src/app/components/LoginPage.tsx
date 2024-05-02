@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Button from "./Button";
+import Input from "./Input";
 
 export default function LoginPage() {
   return (
@@ -11,7 +13,7 @@ export default function LoginPage() {
           alt="Dentes"
           className="rounded-l-xl"
         />
-        <div className="flex gap-4 mx-8 mt-4 w-full">
+        <div className="flex gap-4 mx-8 mt-4 w-full p-2">
           <div className="flex flex-col gap-4 w-full">
             <p className="text-xl font-semibold">Acesse sua agenda</p>
             <form action="" className="flex flex-col">
@@ -27,16 +29,24 @@ export default function LoginPage() {
               <label htmlFor="password" className="mt-2">
                 Senha
               </label>
-              <input
+              <Input
                 type="password"
                 name="password"
                 id="password"
                 placeholder="*****"
                 className="h-12 w-full mt-2 p-4 rounded border border-teal-600 outline-none focus:outline-teal-800"
               />
-              <button type="submit">Entrar</button>
+              <Button
+                type="submit"
+                name="Entrar"
+                className="h-8 bg-teal-800 rounded mt-1 text-zinc-200"
+              />
+              <Button
+                type="button"
+                name="Criar conta"
+                className="h-8 bg-teal-800 rounded mt-1 text-zinc-200"
+              />
             </form>
-            <button type="button">Criar conta</button>
           </div>
         </div>
       </div>
