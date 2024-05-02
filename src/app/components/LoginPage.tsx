@@ -18,14 +18,12 @@ export default function LoginPage() {
             <p className="text-xl font-semibold">Acesse sua agenda</p>
             <form action="" className="flex flex-col">
               <label htmlFor="email">Email</label>
-              <input
+              <Input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="exemplo@gmail.com"
-                className="h-12 mt-2 p-4 rounded border border-teal-600 outline-none focus:outline-teal-800"
               />
-
               <label htmlFor="password" className="mt-2">
                 Senha
               </label>
@@ -34,18 +32,9 @@ export default function LoginPage() {
                 name="password"
                 id="password"
                 placeholder="*****"
-                className="h-12 w-full mt-2 p-4 rounded border border-teal-600 outline-none focus:outline-teal-800"
               />
-              <Button
-                type="submit"
-                name="Entrar"
-                className="h-8 bg-teal-800 rounded mt-1 text-zinc-200"
-              />
-              <Button
-                type="button"
-                name="Criar conta"
-                className="h-8 bg-teal-800 rounded mt-1 text-zinc-200"
-              />
+              <Button type="submit" name="Entrar" />
+              <Button type="button" name="Criar conta" />
             </form>
           </div>
         </div>

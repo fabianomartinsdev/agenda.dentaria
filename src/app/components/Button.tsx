@@ -5,5 +5,9 @@ interface ButtonProps extends ComponentProps<"button"> {
 }
 
 export default function Button({ name, ...props }: ButtonProps) {
-  return <button {...props}>{name}</button>;
+  return (
+    <button className="h-8 bg-teal-800 rounded mt-1 text-zinc-200" {...props}>
+      {name}
+    </button>
+  );
 }
