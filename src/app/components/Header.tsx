@@ -8,7 +8,7 @@ export default function Header() {
         <a href="#" className="hover:scale-105 transition">
           agenda<span className="text-teal-200">.dentária</span>
         </a>
-        {isLoggedIn ? (
+        {!isLoggedIn ? (
           <div className="flex gap-6">
             <a href="#" className="hover:scale-105 transition">
               <CircleUserRound />
