@@ -1,8 +1,8 @@
-import { CirclePlus, CircleX, UserRound } from "lucide-react";
+import { CirclePlus, CircleX, UserRoundSearch } from "lucide-react";
 import Header from "../components/Header";
-import LinkButton from "../components/LinkButton";
+import Link from "next/link";
 
-export default function Main() {
+export default async function Main() {
   const user = "Fabiano";
 
   return (
@@ -11,15 +11,31 @@ export default function Main() {
       <main className="mt-16">
         <div className="max-[600px]:flex-col max-[600px]:w-2/3 w-1/2 rounded-xl m-auto flex bg-zinc-100 text-zinc-800 p-4">
           <div className="flex flex-col">
-            <h1 className="text-zinc-900 font-semibold">Bem vindo, {user}!</h1>
-            <div className="flex">
-              <LinkButton name="Buscar cliente"></LinkButton>
-              <LinkButton name="Adicionar cliente">
+            <h1 className="text-lg text-zinc-900 font-semibold">
+              Bem vindo, {user}!
+            </h1>
+            <div className="mt-4 flex gap-4">
+              <Link
+                href="/#"
+                className="flex gap-4 p-4 rounded bg-teal-800 text-zinc-100 hover:bg-teal-700 transition"
+              >
                 <CirclePlus />
-              </LinkButton>
-              <LinkButton name="Remover cliente">
+                Adicionar cliente
+              </Link>
+              <Link
+                href="/#"
+                className="flex gap-4 p-4 rounded bg-teal-800 text-zinc-100 hover:bg-teal-700 transition"
+              >
+                <UserRoundSearch />
+                Buscar cliente
+              </Link>
+              <Link
+                href="/#"
+                className="flex gap-4 p-4 rounded bg-teal-800 text-zinc-100 hover:bg-teal-700 transition"
+              >
                 <CircleX />
-              </LinkButton>
+                Remover cliente
+              </Link>
             </div>
           </div>
         </div>
