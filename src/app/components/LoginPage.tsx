@@ -27,9 +27,13 @@ export default function LoginPage() {
                 id="password"
                 placeholder="*****"
               />
-              <Button type="submit" name="Entrar" className="mt-4" />
+              <Button type="submit" className="mt-4">
+                Entrar
+              </Button>
             </form>
-            <Button type="button" name="Criar conta" />
+            <Button type="button" name="Criar conta">
+              Cadastrar
+            </Button>
           </div>
         </div>
       </div>

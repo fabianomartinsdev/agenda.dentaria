@@ -1,6 +1,7 @@
 import { CirclePlus, CircleX, UserRoundSearch } from "lucide-react";
 import Header from "../components/Header";
 import Link from "next/link";
+import IconButton from "../components/IconButton";
 
 export default async function Main() {
   const user = "Fabiano";
@@ -15,26 +16,23 @@ export default async function Main() {
               Bem vindo, {user}!
             </h1>
             <div className="mt-4 flex gap-4">
-              <Link
-                href="/#"
-                className="flex gap-4 p-4 rounded bg-teal-800 text-zinc-100 hover:bg-teal-700 transition"
-              >
-                <CirclePlus />
-                Adicionar cliente
+              <Link href="#newclient">
+                <IconButton>
+                  <CirclePlus />
+                  Adicionar cliente
+                </IconButton>
               </Link>
-              <Link
-                href="/#"
-                className="flex gap-4 p-4 rounded bg-teal-800 text-zinc-100 hover:bg-teal-700 transition"
-              >
-                <UserRoundSearch />
-                Buscar cliente
+              <Link href="searchclient">
+                <IconButton>
+                  <UserRoundSearch />
+                  Buscar cliente
+                </IconButton>
               </Link>
-              <Link
-                href="/#"
-                className="flex gap-4 p-4 rounded bg-teal-800 text-zinc-100 hover:bg-teal-700 transition"
-              >
-                <CircleX />
-                Remover cliente
+              <Link href="deleteclient">
+                <IconButton>
+                  <CircleX />
+                  Remover cliente
+                </IconButton>
               </Link>
             </div>
           </div>
