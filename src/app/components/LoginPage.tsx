@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./Button";
 import Input from "./Input";
 
@@ -27,13 +28,13 @@ export default function LoginPage() {
                 id="password"
                 placeholder="*****"
               />
-              <Button type="submit" className="mt-4">
+              <Link href="/portal/main" className="mt-4">
                 Entrar
-              </Button>
+              </Link>
             </form>
-            <Button type="button" name="Criar conta">
+            <Link href="/portal/signup" className="mt-4">
               Cadastrar
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

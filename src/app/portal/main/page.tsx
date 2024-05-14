@@ -1,7 +1,7 @@
 import { CirclePlus, CircleX, UserRoundSearch } from "lucide-react";
-import Header from "../components/Header";
+import Header from "@/app/components/Header";
 import Link from "next/link";
-import IconButton from "../components/IconButton";
+import IconButton from "@/app/components/IconButton";
 
 export default async function Main() {
   const user = "Fabiano";
